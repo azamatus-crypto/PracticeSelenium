@@ -6,6 +6,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,6 +14,10 @@ import java.io.IOException;
 
 public class Practice2 {
 
+    @Test(dataProvider = "driveTest")
+    public void testCaseData(String name, String comunication, int numbers) {
+        System.out.println(name + comunication + numbers);
+    }
 
 
    @DataProvider(name = "getdata")
