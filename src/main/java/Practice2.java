@@ -22,6 +22,7 @@ public class Practice2 {
 
    @DataProvider(name = "getdata")
     public Object[]getData() throws IOException {
+        int a=1;
         DataFormatter dataFormatter = new DataFormatter();
         FileInputStream fileInputStream=new FileInputStream("C:\\Users\\Lenovo\\Desktop\\Exel\\Exeldocuments2.xlsx");
         XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream);
