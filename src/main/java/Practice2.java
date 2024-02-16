@@ -23,6 +23,7 @@ public class Practice2 {
    @DataProvider(name = "getdata")
     public Object[]getData() throws IOException {
         int b=4;
+        int a=121;
         DataFormatter dataFormatter = new DataFormatter();
         FileInputStream fileInputStream=new FileInputStream("C:\\Users\\Lenovo\\Desktop\\Exel\\Exeldocuments2.xlsx");
         XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream);
@@ -33,7 +34,7 @@ public class Practice2 {
         Object [][]data=new Object[count-1][columncount];
         for (int i=0;i<count-1;i++){
             row = sheet.getRow(i + 1);
-            for (int j = 0; j < columncount; i++) {//cyckle for cells in the row
+            for (int j = 0; j < columncount; j++) {//cyckle for cells in the row
                 XSSFCell cell = row.getCell(j);
                 data[i][j] = dataFormatter.formatCellValue(cell);
             }
