@@ -14,10 +14,16 @@ import java.io.IOException;
 
 public class Practice2 {
 
+    @Test(dataProvider = "driveTest")
+    public void testCaseData(String n, String comn, int numn) {
+        System.out.println(n + comn + numn);
+    }
 
 
    @DataProvider(name = "getdata")
     public Object[]getData() throws IOException {
+        int b=4;
+        int a=121;
         DataFormatter dataFormatter = new DataFormatter();
         FileInputStream fileInputStream=new FileInputStream("C:\\Users\\Lenovo\\Desktop\\Exel\\Exeldocuments2.xlsx");
         XSSFWorkbook workbook=new XSSFWorkbook(fileInputStream);
