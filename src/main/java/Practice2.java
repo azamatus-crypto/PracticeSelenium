@@ -6,6 +6,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -27,7 +28,7 @@ public class Practice2 {
         Object [][]data=new Object[count-1][columncount];
         for (int i=0;i<count-1;i++){
             row = sheet.getRow(i + 1);
-            for (int j = 0; j < columncount; i++) {//cyckle for cells in the row
+            for (int j = 0; j < columncount; j++) {//cyckle for cells in the row
                 XSSFCell cell = row.getCell(j);
                 data[i][j] = dataFormatter.formatCellValue(cell);
             }

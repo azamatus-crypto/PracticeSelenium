@@ -35,7 +35,7 @@ public class Practice {
         Object[][] data = new Object[rowCount - 1][columncount];//-1 becouse dont wanna read info on the top
         for (int i = 0; i < rowCount - 1; i++) {//cycle for orws
             row = sheet.getRow(i + 1);
-            for (int j = 0; j < columncount; i++) {//cyckle for cells in the row
+            for (int j = 0; j < columncount; j++) {//cyckle for cells in the row
                 XSSFCell cell = row.getCell(j);
                 data[i][j] = dataFormatter.formatCellValue(cell);
             }
