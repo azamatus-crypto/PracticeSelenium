@@ -8,6 +8,7 @@ public class TestSample {
         System.out.println(arrayList.get(0));
         System.out.println(arrayList.get(1));
         System.out.println(arrayList.get(2));
+        System.out.println("hello");
         Practice practice=new Practice();
 
 
