@@ -6,6 +6,8 @@ public class TestSample {
        Examples examples=new Examples();
        ArrayList arrayList=examples.getInfoFromExel("Product Name");
         System.out.println(arrayList.get(0));
+        Practice practice=new Practice();
+        
 
 
 
